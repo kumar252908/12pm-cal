@@ -68,7 +68,7 @@ public class App
         System.out.println("Sum is : "+app.addFunction(secondNum, secondNum));
         System.out.println("Difference is : "+app.subFunction(firstNum, secondNum));
         System.out.println("Product is : "+app.mulFunction(firstNum, secondNum));
-        
+        System.out.println("build is completed");
         String output = String.format("\n*** Your Calculator ***\n\nFirst: %d\nSecond: %d\n\nSum : %d\nDifference : %d\nProduct : %d\n\n", app.firstNum, app.secondNum, app.addFunction(firstNum, secondNum), app.subFunction(firstNum, secondNum), app.mulFunction(firstNum, secondNum));
 	    System.out.println(output);
         
