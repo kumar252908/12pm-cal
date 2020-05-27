@@ -53,8 +53,8 @@ public class App
     {
         
 		
-		long firstNum;	       
-		long secondNum;
+		int firstNum;	       
+		int secondNum;
 		App app = new App(firstNum, secondNum);
       
                
