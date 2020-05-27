@@ -45,9 +45,9 @@ public class App {
 		long first = Long.parseLong(args[0]);
 		long second = Long.parseLong(args[1]);
 		
-		Calculator cal = new Calculator(first, second);
+		App ap = new App(first, second);
 		
-		String output = String.format("\n*** Your Results ***\n\nFirst: %d\nSecond: %d\n\nSum : %d\nDifference : %d\nProduct : %d\n\n", cal.first, cal.second, cal.addFucn(first, second), cal.subFucn(first, second), cal.mulFucn(first, second));
+		String output = String.format("\n*** Your Results ***\n\nFirst: %d\nSecond: %d\n\nSum : %d\nDifference : %d\nProduct : %d\n\n", ap.first, ap.second, ap.addFucn(first, second), ap.subFucn(first, second), ap.mulFucn(first, second));
 	    System.out.println("CALCULATOR DISPLAY");
 	    System.out.println(output);
 	}
