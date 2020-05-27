@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class AppTest {
    
-	App app = new App();
+	App app = new App(2,3);
 	@Test
     public void twoAndThreeIsFive() throws Exception {
     	assertEquals(app.addFunction(2, 3),5);
