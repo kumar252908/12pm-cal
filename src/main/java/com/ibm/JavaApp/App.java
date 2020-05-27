@@ -65,7 +65,7 @@ public class App
         app.setSecondNum(secondNum);
         
        
-        System.out.println("Sum is : "+app.addFunction(secondNum, secondNum));
+        System.out.println("Sum is : "+app.addFunction(firstNum, secondNum));
         System.out.println("Difference is : "+app.subFunction(firstNum, secondNum));
         System.out.println("Product is : "+app.mulFunction(firstNum, secondNum));
         System.out.println("build is completed");
