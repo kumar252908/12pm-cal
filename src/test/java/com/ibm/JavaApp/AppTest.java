@@ -12,20 +12,20 @@ import static org.junit.Assert.assertEquals;
  */
 public class AppTest {
    
-	App app = new App(2,3);
+	App tet = new tet(2,3);
 	@Test
     public void twoAndThreeIsFive() throws Exception {
-    	assertEquals(app.addFunction(2, 3),5);
+    	assertEquals(tet.addFunction(2, 3),5);
     }
 
 	@Test
     public void threeMinusTwoIsOne() throws Exception {
-        assertEquals(app.subFunction(2, 3),1);
+        assertEquals(tet.subFunction(2, 3),1);
     }
     
 	@Test
     public void threeXThreeIsNine() throws Exception {
-        assertEquals(app.mulFunction(3, 3), 9);
+        assertEquals(tet.mulFunction(3, 3), 9);
     }
     
 }
