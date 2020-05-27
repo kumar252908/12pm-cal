@@ -52,17 +52,12 @@ public class App
 	public static void main( String[] args )
     {
         
+		
+		long firstNum = Long.parseLong(args[0];
+	       long secondNum = Long.parseLong(args[1];
 		App app = new App(firstNum, secondNum);
       
-        Scanner sc = new Scanner(System.in);
-        
-        System.out.println("Enter the first numeric value ");
-        int firstNum =  sc.nextInt();
-        app.setFirstNum(firstNum);
-        
-        System.out.println("Enter the second numeric value ");
-        int secondNum =  sc.nextInt();
-        app.setSecondNum(secondNum);
+               
         
        
         System.out.println("Sum is : "+app.addFunction(firstNum, secondNum));
