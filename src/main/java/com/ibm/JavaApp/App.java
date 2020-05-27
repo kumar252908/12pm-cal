@@ -11,7 +11,7 @@ public class App {
 	public long first;
 	public long second;
 	
-	public Calculator(long first, long second){
+	public App(long first, long second){
 		this.first = first;
 		this.second=second;
 	}
