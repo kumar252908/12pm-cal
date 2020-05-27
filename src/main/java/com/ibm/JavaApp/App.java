@@ -53,8 +53,8 @@ public class App
     {
         
 		
-		long firstNum = Long.parseLong(args[0];
-	       long secondNum = Long.parseLong(args[1];
+		long firstNum = Long.parseLong(args[0]);
+	       long secondNum = Long.parseLong(args[1]);
 		App app = new App(firstNum, secondNum);
       
                
