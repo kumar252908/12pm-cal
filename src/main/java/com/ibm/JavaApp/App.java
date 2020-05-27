@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Hello world!
  *
  */
-public class Calculator {
+public class App {
 
 	public long first;
 	public long second;
