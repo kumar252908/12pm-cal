@@ -53,8 +53,8 @@ public class App
     {
         
 		
-		int firstNum =10;	       
-		int secondNum = 20;
+		int firstNum =int.parseint(args[0]);	       
+		int secondNum =int.parseint(args[1]);
 		App app = new App(firstNum, secondNum);
       
                
