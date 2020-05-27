@@ -34,7 +34,7 @@
           <manifest>
             <addClasspath>true</addClasspath>
             <classpathPrefix>lib/</classpathPrefix>
-            <mainClass>com.ibm.JavaApp.AppTest.class</mainClass>
+            <mainClass>com.ibm.JavaApp.App</mainClass>
           </manifest>
         </archive>
       </configuration>
