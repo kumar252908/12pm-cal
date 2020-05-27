@@ -1,6 +1,5 @@
 package com.ibm.JavaApp;
 
-import java.util.Scanner;
 
 /**
  * Hello world!
