@@ -1,54 +1,69 @@
 package com.ibm.JavaApp;
 
+import java.util.Scanner;
 
 /**
  * Hello world!
  *
  */
-public class App {
-
-	public long first;
-	public long second;
+public class App 
+{
+    
+	public int firstNum;
+	public int secondNum;
 	
-	public App(long first, long second){
-		this.first = first;
-		this.second=second;
-	}
 	
-	public long getFirst() {
-		return first;
+	public int getFirstNum() {
+		return firstNum;
 	}
 
-	public long getSecond() {
-		return second;
+
+	public void setFirstNum(int firstNum) {
+		this.firstNum = firstNum;
 	}
 
-	public long addFucn(long first, long second){
-		
-		return first+second;
-	}
-	
-	public long subFucn(long first, long second){
-		
-		return second-first;
-	}
-	
-	public long mulFucn(long first, long second){
-		
-		return first*second;
-	}
-	
-	
-	public static void main(String[] args) {
 
-		long first = Long.parseLong(args[0]);
-		long second = Long.parseLong(args[1]);
-		
-		App ap = new App(first, second);
-		
-		String output = String.format("\n*** Your Results ***\n\nFirst: %d\nSecond: %d\n\nSum : %d\nDifference : %d\nProduct : %d\n\n", ap.first, ap.second, ap.addFucn(first, second), ap.subFucn(first, second), ap.mulFucn(first, second));
-	    System.out.println("CALCULATOR DISPLAY");
-	    System.out.println(output);
+	public int getSecondNum() {
+		return secondNum;
+	}
+
+
+	public void setSecondNum(int secondNum) {
+		this.secondNum = secondNum;
+	}
+
+	public int addFunction(int firstNum, int secondNum) {
+			return firstNum+secondNum;
 	}
 	
+	public int subFunction(int firstNum, int secondNum) {
+		return secondNum-firstNum;
+	}
+	
+	public int mulFunction(int firstNum, int secondNum) {
+		return firstNum*secondNum;
+	}
+	
+	public static void main( String[] args )
+    {
+        
+        App app = new App();
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter the first numeric value ");
+        int firstNum =  sc.nextInt();
+        app.setFirstNum(firstNum);
+        
+        System.out.println("Enter the second numeric value ");
+        int secondNum =  sc.nextInt();
+        app.setSecondNum(secondNum);
+        
+        System.out.println("Sum is : "+app.addFunction(secondNum, secondNum));
+        System.out.println("Difference is : "+app.subFunction(firstNum, secondNum));
+        System.out.println("Product is : "+app.mulFunction(firstNum, secondNum));
+        
+        //String output = String.format("\n*** Your Calculator ***\n\nFirst: %d\nSecond: %d\n\nSum : %d\nDifference : %d\nProduct : %d\n\n", app.firstNum, app.secondNum, app.addFunction(firstNum, secondNum), app.subFunction(firstNum, secondNum), app.mulFunction(firstNum, secondNum));
+	    //System.out.println(output);
+        
+    }
 }
